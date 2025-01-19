@@ -10,6 +10,10 @@ tokens = {
     "yeezysupply":{
         "v2": [],
         "v3": []
+    },
+    "google": {
+        "v2": [],
+        "v3": []
     }
 }
 
@@ -93,6 +97,6 @@ async def getwebhook(site: str, version: str, response: Response):
         return {"success": False}
 
 
-uvicorn.run(app, port=42069)
+uvicorn.run(app, port=5000)
 
 

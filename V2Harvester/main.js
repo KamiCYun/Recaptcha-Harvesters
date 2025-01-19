@@ -85,8 +85,8 @@ ipcMain.on('synchronous-message', (event, arg) => {
     } else if (arg[0] === "token") {
 		token = arg[1]
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", 'http://127.0.0.1:42069/recaptcha/add', true);
-		xhr.send(JSON.stringify({"token":token,"site":sitename, "version":"v3"}));
+		xhr.open("POST", 'http://127.0.0.1:5000/recaptcha/add', true);
+		xhr.send(JSON.stringify({"token":token,"site":sitename, "version":"v2"}));
 		event.returnValue = ""
 	}
 

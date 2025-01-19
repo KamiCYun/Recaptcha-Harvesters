@@ -5,164 +5,186 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <script type="text/javascript">
             var onloadCallback = function() {
-              grecaptcha.render('html_element', {
-                'sitekey' : 'sitekeyPlaceholder'
-              });
+                grecaptcha.render('html_element', {
+                    'sitekey': 'sitekeyPlaceholder'
+                });
             };
-          </script>
-
-
-
-        
+        </script>
         <style>
             body {
-            background-color:#464241;
-            margin:0
+                background-color: #464241;
+                margin: 0;
             }
-            .text{
-            font-family: 'Lato', sans-serif;
-            color: #fff;
-            font-size: 15px;
+            .text {
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-size: 15px;
             }
             .topdiv {
-            width: 100%;
-            background-color: #383434;
-            display: flex;
-            flex-direction: row;
-            height: 10%;
-            justify-content: center;
-            align-items: center;
+                width: 100%;
+                background-color: #383434;
+                display: flex;
+                flex-direction: row;
+                height: 10%;
+                justify-content: center;
+                align-items: center;
             }
             .topblock {
-            width: 50%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             }
-            .harvestdiv{
-            height: 75%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            .harvestdiv {
+                height: 75%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
             }
             .harvestbutton {
-            font-family: 'Lato', sans-serif;
-            color: #fff;
-            font-size: 15px;
-            text-transform: uppercase;
-            padding: 20px;
-            border: 2px solid #fff;
-            border-radius: 6px;
-            display: inline-block;
-            transition: all 0.3s ease 0s;
-            user-select: none;
-            text-decoration: none;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-size: 15px;
+                text-transform: uppercase;
+                padding: 20px;
+                border: 2px solid #fff;
+                border-radius: 6px;
+                display: inline-block;
+                transition: all 0.3s ease 0s;
+                user-select: none;
+                text-decoration: none;
             }
             .harvestbutton:hover {
-            color: #20bf6b;
-            border-radius: 50px;
-            border-color: #20bf6b;
-            transition: all 0.3s ease 0s;
+                color: #20bf6b;
+                border-radius: 50px;
+                border-color: #20bf6b;
+                transition: all 0.3s ease 0s;
             }
             .botdiv {
-            width: 100%;
-            background-color: #383434;
-            display: flex;
-            flex-direction: row;
-            height: 15%;
-            justify-content: left;
-            align-items: left;
+                width: 100%;
+                background-color: #383434;
+                display: flex;
+                flex-direction: row;
+                height: 15%;
+                justify-content: left;
+                align-items: left;
             }
-            .loginblock{
-            width: 20%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            .loginblock {
+                width: 20%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
             }
-            .loginbutton{
-            height: 40%;
-            width: 80%;
-            font-family: 'Lato', sans-serif;
-            color: #fff;
-            font-size: 12px;
-            text-transform: uppercase;
-            border: 2px solid #fff;
-            border-radius: 6px;
-            text-decoration: none;
-            background-color: inherit;
-            vertical-align: middle;
-            cursor:pointer;
-            user-select: none;
+            .loginbutton {
+                height: 40%;
+                width: 80%;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                border: 2px solid #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                background-color: inherit;
+                vertical-align: middle;
+                cursor: pointer;
+                user-select: none;
             }
-            .proxyblock{
-            width: 60%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            .proxyblock {
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
             }
-            .proxyinput{
-            height: 40%;
-            width: 70%;
-            font-family: 'Lato', sans-serif;
-            color: #fff;
-            font-size: 12px;
-            text-transform: uppercase;
-            border: 2px solid #fff;
-            border-radius: 6px;
-            user-select: none;
-            text-decoration: none;
-            background-color: inherit;
-            vertical-align: middle;
-            margin-right: 0.5rem;
-            padding-left: 5px;
-            padding-right: 5px;
+            .proxyinput {
+                height: 40%;
+                width: 70%;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                border: 2px solid #fff;
+                border-radius: 6px;
+                user-select: none;
+                text-decoration: none;
+                background-color: inherit;
+                vertical-align: middle;
+                margin-right: 0.5rem;
+                padding-left: 5px;
+                padding-right: 5px;
             }
-            .proxybutton{
-            height: 40%;
-            width: 20%;
-            font-family: 'Lato', sans-serif;
-            color: #fff;
-            font-size: 12px;
-            text-transform: uppercase;
-            border: 2px solid #fff;
-            border-radius: 6px;
-            text-decoration: none;
-            background-color: inherit;
-            vertical-align: middle;
-            cursor:pointer;
-            user-select: none;
+            .proxybutton {
+                height: 40%;
+                width: 20%;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-size: 12px;
+                text-transform: uppercase;
+                border: 2px solid #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                background-color: inherit;
+                vertical-align: middle;
+                cursor: pointer;
+                user-select: none;
             }
         </style>
     </head>
-    <body onload=window.harvester.getproxy()>
-        <div class=topdiv>
-            <div class=topblock>
-                <p class=text>Solved Captchas:</p>
-                <p class=text id="count">0</p>
+    <body onload="window.harvester.getproxy()">
+        <div class="topdiv">
+            <div class="topblock">
+                <p class="text">Solved Captchas:</p>
+                <p class="text" id="count">0</p>
             </div>
-            <div class=topblock>
-                <p class=text>Proxy:</p>
-                <p class=text id="CurrentProx"></p>
+            <div class="topblock">
+                <p class="text">Proxy:</p>
+                <p class="text" id="CurrentProx"></p>
             </div>
         </div>
-        <div class=harvestdiv>
+        <div class="harvestdiv">
             <div id="html_element"></div>
         </div>
-        <div class=botdiv onload="onloadCallback()">
-            <div class=loginblock>
-                <button onclick=window.harvester.login() class=loginbutton>Login</button>
+        <div class="botdiv">
+            <div class="loginblock">
+                <button onclick="window.harvester.login()" class="loginbutton">Login</button>
             </div>
-            <div class=proxyblock>
-                <input placeholder="Captcha Proxy" class=proxyinput type="text" id="proxy" name="Proxy"></input>
-                <button class=proxybutton onclick=window.harvester.setproxy()>Save</button>
+            <div class="proxyblock">
+                <input placeholder="Captcha Proxy" class="proxyinput" type="text" id="proxy" name="Proxy">
+                </input>
+                <button class="proxybutton" onclick="window.harvester.setproxy()">Save</button>
             </div>
         </div>
         <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
         async defer>
         </script>
-    </body>
+        <script>
+                            // Start checking for token every second
+                setInterval(() => {
+                    // Ensure grecaptcha.enterprise is available
+                    if (window.grecaptcha) {
+                        const token = grecaptcha.getResponse();
+                        console.log(token);
 
+                        if (token !== "") {
+                            console.log("Token detected:", token);
+
+                            // Send the token using the exposed method
+                            window.harvester.savetoken(token);
+
+                            // Reset the reCAPTCHA
+                            grecaptcha.reset();
+
+                            // Update the solved captcha count
+                            const countElement = document.getElementById("count");
+                            if (countElement) {
+                                countElement.innerText = parseInt(countElement.innerText) + 1;
+                            }
+                        }
+                    }
+                }, 1000); // Check every second
+        </script>
+    </body>
 </html>
